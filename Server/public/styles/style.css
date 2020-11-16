@@ -237,6 +237,12 @@ option{
     text-align: center;
 }
 
+#phoneContainer{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    column-gap: 1rem;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 

@@ -49,7 +49,19 @@
                     <input type="email" name="email" id="email" required/>
 
                     <label for="phone">Phone</label>
-                    <input type="tel"  name="phone" id="phone" required/>
+                    <div id="phoneContainer">
+                        <div>
+                            <select  name="phoneCode" id="phoneCode">
+                                <option value="+30">+30</option>
+                            </select>
+
+                        </div>
+                        <div>
+                            <input type="tel"  name="phone" id="phone" required/>
+                        </div>
+                    </div>
+                 
+                
 
                     <label for="message">Message</label>
                     <textarea name="message" id="message" cols="1" rows="3" ></textarea>
