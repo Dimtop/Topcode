@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require('cors');
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
+const path = require("path")
 //Middlewares
 
 
@@ -23,10 +24,13 @@ app.use(express.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 //Static files
-app.use(express.static('public'));
+app.use(express.static('public/dist'));
 
 //Routing
 app.use("/api/contacts",contactRouter);
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "dist","index.html"));
+  });
 
 //Initializing the server
 app.listen(process.env.PORT, (err)=>{

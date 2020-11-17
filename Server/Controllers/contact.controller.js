@@ -57,9 +57,9 @@ exports.postContact = async (req,res)=>{
 
     apiInstance.createContact(createContact).then(function(data) {
       console.log('API called successfully. Returned data: ' + data);
-      res.status(200).redirect("/contact.html")
+      res.status(200).redirect("/contact")
     }, function(error) {
       console.error(error);
-      res.status(200).redirect("/error.html")
+      res.status(400).redirect("/error")
     });
 };
