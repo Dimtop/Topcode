@@ -11,7 +11,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     height: 100%;
-    width: 100%;
+
     background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,29,1) 19%, rgba(2,11,75,1) 100%);
     justify-items: center;
     align-items: center;
@@ -218,7 +218,9 @@ option{
 }
 
 .aboutText{
-    text-align: justify;
+
+    word-wrap: break-all;
+    white-space: normal;
 }
 
 #servicesContainer{
