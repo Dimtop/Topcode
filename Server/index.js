@@ -10,6 +10,7 @@ const path = require("path")
 
 //Routers
 const contactRouter  = require("./Routers/contact.router");
+const analyticsRouter = require("./Routers/analytics.router");
 
 //Initiallizing the app
 const app = express();
@@ -28,9 +29,11 @@ app.use(express.static('public/dist'));
 
 //Routing
 app.use("/api/contacts",contactRouter);
+app.use("/api/analytics",analyticsRouter);
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "dist","index.html"));
   });
+
 
 //Initializing the server
 app.listen(process.env.PORT, (err)=>{
