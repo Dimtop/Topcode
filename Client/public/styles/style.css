@@ -12,7 +12,7 @@ body{
     grid-template-columns: 1fr;
     height: 100%;
 
-    background:linear-gradient(90deg, #6837CC   0%, #BAACFF 100%);
+    background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,29,1) 19%, rgba(2,11,75,1) 100%);
     justify-items: center;
     align-items: center;
     column-gap: 1rem;
@@ -61,7 +61,7 @@ a{
     width: 100%;
     height: 100%;
     position: fixed;
-    background:linear-gradient(90deg, #6837CC   0%, #BAACFF 100%);
+    background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,29,1) 19%, rgba(2,11,75,1) 100%);
     align-items: center;
     justify-items: center;
     display: none;
@@ -104,7 +104,6 @@ a{
     font-size: 1.5rem;
     font-family: "Segoe UI";
     text-align: center;
-    font-weight: bold;
     margin:0;
 }
 
@@ -267,15 +266,4 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px black inset !important;
     -webkit-text-fill-color: white !important;
-}
-
-
-#contestContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    column-gap: 2rem;
-    row-gap: 2rem;
- 
 }

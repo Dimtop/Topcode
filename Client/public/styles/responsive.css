@@ -53,8 +53,4 @@
     #servicesContainer{
         grid-template-columns: 1fr;
     }
-    #contestContainer{
-        grid-template-columns: 1fr;
-    }
-
   }

@@ -11,7 +11,7 @@ const path = require("path")
 //Routers
 const contactRouter  = require("./Routers/contact.router");
 const analyticsRouter = require("./Routers/analytics.router");
-
+const contestRouter = require("./Routers/contest.router")
 //Initiallizing the app
 const app = express();
 
@@ -30,6 +30,7 @@ app.use(express.static('public/dist'));
 //Routing
 app.use("/api/contacts",contactRouter);
 app.use("/api/analytics",analyticsRouter);
+app.use("/api/contest",contestRouter)
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "dist","index.html"));
   });
