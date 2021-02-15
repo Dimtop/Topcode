@@ -1,9 +1,0 @@
-@keyframes textFadein {
-    from {opacity:0}
-    to {opacity: 1;}
-}
-
-#logoImage,.title,.paragraph,#menuContainer,#contactFormContainer{
-    animation-name: textFadein;
-    animation-duration: 5s;
-}
