@@ -1,0 +1,13 @@
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+#fullScreenMenu,#titleContainer,#aboutContainer,#serviceContainer,#oneColContainer,#twoColContainer,#threeColContainer,#homeServicesContainer,#contactContainer{
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}

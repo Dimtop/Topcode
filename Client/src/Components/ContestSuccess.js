@@ -27,7 +27,7 @@ class ConstestSuccess extends React.Component{
                 <div id="errorContainer">
                     <div >
                         <p class="title">Η συμμετοχή σας καταχωρήθηκε με επιτυχία!</p>
-                        <a href="/index.html" style="text-align: center;">Επιστροφή στην αρχική</a>
+                        <a href="/" style={{textAlign: "center"}}>Επιστροφή στην αρχική</a>
                     </div>
 
                 </div>
